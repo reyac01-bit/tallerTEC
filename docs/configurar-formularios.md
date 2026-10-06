@@ -1,6 +1,6 @@
 # Activar inscripción y valoración
 
-Estado: pendiente de crear o recibir los dos formularios. El sitio no tiene cuentas ni base de datos y todavía no recibe respuestas.
+Estado: valoración del sitio enlazada a https://forms.gle/yR8hRAzrSDnTCDCd6. Según las capturas facilitadas, recoge nombre, experiencia general, contenidos útiles y sugerencias. Inscripción y entrega de ejercicios pendientes. El sitio no tiene cuentas ni base de datos propia. La recepción real de respuestas debe comprobarla el organizador en Google Forms.
 
 ## 1. Crear dos formularios en Google Forms o Microsoft Forms
 
