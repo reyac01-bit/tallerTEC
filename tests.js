@@ -10,3 +10,13 @@ assert.deepEqual(resumirDatos([4,1,2,3]),{media:2.5,mediana:2.5,rango:3});
 assert.throws(()=>resumirDatos([]));
 assert.throws(()=>resumirDatos([-1,2]));
 console.log('8 comprobaciones matemáticas aprobadas.');
+
+const {leerRespuesta}=require('./racionales');
+assert.equal(leerRespuesta('2/8'),.25);
+assert.equal(leerRespuesta('0,25'),.25);
+assert.equal(leerRespuesta('-1/4'),-.25);
+assert.equal(leerRespuesta('1/0'),null);
+assert.equal(leerRespuesta(''),null);
+assert.equal(leerRespuesta('abc'),null);
+assert.equal(leerRespuesta('Infinity'),null);
+console.log('7 comprobaciones del ingreso de respuestas aprobadas.');
