@@ -1,0 +1,12 @@
+'use strict';
+const assert = require('node:assert/strict');
+const {sumarFracciones,resumirDatos}=require('./interacciones');
+assert.deepEqual(sumarFracciones(-1,2,3,4),{n:1,d:4,valor:.25});
+assert.deepEqual(sumarFracciones(-3,4,1,2),{n:-1,d:4,valor:-.25});
+assert.deepEqual(sumarFracciones(1,2,-1,2),{n:0,d:1,valor:0});
+assert.throws(()=>sumarFracciones(1,0,1,2));
+assert.deepEqual(resumirDatos([10,12,12,14,42]),{media:18,mediana:12,rango:32});
+assert.deepEqual(resumirDatos([4,1,2,3]),{media:2.5,mediana:2.5,rango:3});
+assert.throws(()=>resumirDatos([]));
+assert.throws(()=>resumirDatos([-1,2]));
+console.log('8 comprobaciones matemáticas aprobadas.');
