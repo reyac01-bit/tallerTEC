@@ -13,3 +13,11 @@ Ejecute `node tests.js` y `node --check interacciones.js`. Revise también las i
 ## Estado
 
 Versión 0.2 para revisión académica. Portada y racionales rediseñados; los otros recursos conservan su estructura inicial. No se dispone del piloto previo citado en la propuesta: racionales es una elaboración nueva. Los talleres son planes, y el informe y bitácora son plantillas; no acreditan actividades realizadas. La selección de habilidades, nombramiento, coordinación MEP, licencia y publicación institucional están pendientes. No se asigna una licencia de difusión hasta el acuerdo institucional.
+
+## GeoGebra y participación (v0.3)
+
+En geometría, pulse **Cargar GeoGebra** para iniciar una construcción externa. Requiere acceso a `www.geogebra.org` y a los servidores de aplicaciones de GeoGebra. Los controles de base y altura actualizan el triángulo; C puede arrastrarse horizontalmente. La exploración SVG original sigue disponible sin conexión. Esta integración no envía respuestas al docente ni conserva la construcción al recargar.
+
+`participar.html` contiene los accesos a inscripción y valoración. Los formularios están **pendientes de configurar**: siga [la guía](docs/configurar-formularios.md) y complete los enlaces públicos en `formularios-config.js`. El registro se realizará en la cuenta de Google Forms o Microsoft Forms del organizador; no se almacenan datos personales en GitHub. No hay cuentas de participantes ni envío automático de respuestas.
+
+La carga real de GeoGebra no se pudo verificar en el entorno de desarrollo porque su dominio está bloqueado. Se verificaron la carga bajo demanda, la configuración del applet mediante un sustituto de prueba y la alternativa ante errores; antes de usarlo en un taller, comprobar la construcción en una conexión con acceso a GeoGebra.
