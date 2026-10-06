@@ -11,3 +11,5 @@
 - 0.3.1: accesos destacados a GeoGebra y valoración desde la portada; enlace de valoración disponible sin JavaScript. GeoGebra continúa cargándose a petición.
 
 - 0.3.2: corregida función `round` en etiqueta de área GeoGebra; una etiqueta opcional fallida no impide usar el triángulo. Formulario de valoración integrado en Participación mediante iframe de Google Forms, con enlace externo alternativo. Validación real de servicios externos pendiente por restricción de red.
+
+- 0.4: prototipo original de laberinto con tres puzzles de racionales, pistas y controles de teclado/móvil. p5.js local; sin envío ni persistencia de respuestas.

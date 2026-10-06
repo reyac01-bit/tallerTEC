@@ -25,3 +25,11 @@ La carga real de GeoGebra no se pudo verificar en el entorno de desarrollo porqu
 ## Corrección v0.3.2
 
 La etiqueta de área usa la función `round` en minúscula. Si solo falla esa etiqueta, el triángulo sigue disponible. Participación muestra el formulario de valoración de Google Forms dentro de la página y conserva un enlace externo si el servicio no permite mostrarlo o requiere sesión. La inscripción y la entrega de ejercicios siguen pendientes. Las pruebas locales no confirman la recepción real de respuestas ni la carga externa de GeoGebra.
+
+## Juego: laberinto de racionales (v0.4)
+
+Abra `juegos/laberinto.html`, o use el acceso en la portada y en racionales. Haga clic en el tablero para usar flechas/WASD; en móvil use los botones. Las puertas requieren tres retos de suma, diferencia y resta de fracciones. Acepte respuestas equivalentes; use pistas y reintente sin penalización. Reiniciar o recargar borra la partida. No se envían respuestas al docente.
+
+El laberinto es original y está construido con p5.js 1.11.11, incluido localmente para funcionar sin conexión. Véase `vendor/p5/LICENSE.txt` y `vendor/p5/ORIGEN.md` para la dependencia de terceros. El tablero todavía no ofrece una experiencia no visual completa.
+
+Ejecute `node juegos/laberinto.test.js` para verificar rutas, puertas obligatorias, respuestas y victoria.
