@@ -6,3 +6,5 @@
 [hidden]{display:none!important}.geo-stage{width:100%;min-height:0;overflow:hidden;margin:20px 0}.geo-stage:has(canvas){min-height:260px}.participation-banner{background:#e7efea!important;border:0!important}button:disabled{opacity:.65;cursor:wait}@media print{#geogebra{display:none}}
 
 .quick-access{display:grid;grid-template-columns:1fr 1fr;gap:32px;background:#fff!important;margin:24px 0!important}.quick-access>div+div{border-left:1px solid #dbe5e1;padding-left:32px}.quick-access p:not(.eyebrow){font-size:15px}.quick-access h2{font-size:24px!important}#geogebra{scroll-margin-top:24px}header .actions>a:not(.button){color:inherit}@media(max-width:600px){.quick-access{grid-template-columns:1fr;gap:24px}.quick-access>div+div{border-left:0;border-top:1px solid #dbe5e1;padding-left:0;padding-top:24px}.site-nav{flex-wrap:wrap}.site-nav>div{flex-wrap:wrap;gap:14px}}
+
+.form-embed{display:block;width:100%;height:1200px;border:1px solid #dbe5e1;border-radius:12px;background:#fff;margin:24px 0}#formulario-valoracion{scroll-margin-top:24px}@media(max-width:600px){.form-embed{height:1450px}}@media print{.form-embed{display:none}}

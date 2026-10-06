@@ -14,7 +14,7 @@ if(typeof document!=='undefined'){
  for(const name of ['inscripcion','valoracion']){
   const raw=window.TALLERTEC_FORMULARIOS?.[name],url=urlFormulario(raw);
   const link=document.getElementById(name+'-link'),status=document.getElementById(name+'-estado');
-  if(url){link.href=url;link.hidden=false;status.textContent='Formulario disponible. Se abre en el servicio externo.';}
+  if(url){link.href=name==='valoracion'&&document.getElementById('formulario-valoracion')?'#formulario-valoracion':url;link.hidden=false;status.textContent=name==='valoracion'?'Formulario disponible más abajo; también puedes abrirlo en Google Forms.':'Formulario disponible. Se abre en el servicio externo.';}
   else if(raw){status.textContent='Formulario no disponible: el organizador debe revisar el enlace de respuesta.';}
  }
 }

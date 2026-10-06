@@ -21,3 +21,7 @@ En geometría, pulse **Cargar GeoGebra** para iniciar una construcción externa.
 `participar.html` contiene los accesos a inscripción y valoración. La valoración del sitio está enlazada al formulario facilitado por el organizador. La inscripción y la entrega de ejercicios siguen **pendientes de configurar**. Para añadir formularios, siga [la guía](docs/configurar-formularios.md) y complete los enlaces públicos en `formularios-config.js`. El registro se realizará en la cuenta de Google Forms o Microsoft Forms del organizador; no se almacenan datos personales en GitHub. No hay cuentas de participantes ni envío automático de respuestas.
 
 La carga real de GeoGebra no se pudo verificar en el entorno de desarrollo porque su dominio está bloqueado. Se verificaron la carga bajo demanda, la configuración del applet mediante un sustituto de prueba y la alternativa ante errores; antes de usarlo en un taller, comprobar la construcción en una conexión con acceso a GeoGebra.
+
+## Corrección v0.3.2
+
+La etiqueta de área usa la función `round` en minúscula. Si solo falla esa etiqueta, el triángulo sigue disponible. Participación muestra el formulario de valoración de Google Forms dentro de la página y conserva un enlace externo si el servicio no permite mostrarlo o requiere sesión. La inscripción y la entrega de ejercicios siguen pendientes. Las pruebas locales no confirman la recepción real de respuestas ni la carga externa de GeoGebra.

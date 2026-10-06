@@ -27,3 +27,10 @@ assert.equal(urlFormulario('https://forms.office.com/r/abc123'),'https://forms.o
 assert.equal(urlFormulario('https://forms.office.com/Pages/ResponsePage.aspx?id=abc'),'https://forms.office.com/Pages/ResponsePage.aspx?id=abc');
 for(const v of ['', 'javascript:alert(1)', 'https://docs.google.com/forms/d/abc/edit', 'https://forms.gle.ejemplo.com/a', 'http://forms.gle/a', 'https://usuario@forms.gle/a'])assert.equal(urlFormulario(v),null);
 console.log('10 comprobaciones de enlaces de formularios aprobadas.');
+const {construirTriangulo}=require('./geogebra');
+const commands=[];
+assert.equal(construirTriangulo({evalCommand(command){commands.push(command);return !command.includes('Round(');}}),true);
+assert(commands.some(command=>command.includes('round(area,2)')));
+assert.equal(construirTriangulo({evalCommand(command){return !command.startsWith('Text(');}}),false);
+assert.equal(construirTriangulo({evalCommand(command){if(command.startsWith('Text('))throw Error('Texto no disponible');return true;}}),false);
+console.log('4 comprobaciones de construcción y etiqueta opcional GeoGebra aprobadas.');
