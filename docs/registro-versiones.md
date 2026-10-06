@@ -7,3 +7,5 @@
 - 0.3 (2026-10-05): integración de GeoGebra bajo demanda en geometría, con alternativa sin conexión. Sección de participación y guía para crear formularios externos; enlaces pendientes. Carga externa de GeoGebra pendiente de validación por restricción de red del entorno.
 
 - Valoración del sitio: conectado el formulario de retroalimentación facilitado por el organizador. Inscripción y entrega de ejercicios continúan pendientes.
+
+- 0.3.1: accesos destacados a GeoGebra y valoración desde la portada; enlace de valoración disponible sin JavaScript. GeoGebra continúa cargándose a petición.
